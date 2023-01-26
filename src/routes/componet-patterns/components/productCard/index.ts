@@ -1,3 +1,5 @@
+import { ProductCardPrevProps } from '../../interfaces/interfaces';
+
 import { ProductCard as ProductCardPrev } from './ProductCard';
 
 import { ProductImage } from './ProductImage';
@@ -8,7 +10,7 @@ export { ProductImage } from './ProductImage';
 export { ProductTitle } from './ProductTitle';
 export { ProductButtons } from './ProductButtons';
 
-export const ProductCard = Object.assign( ProductCardPrev, {
+export const ProductCard: ProductCardPrevProps = Object.assign( ProductCardPrev, {
     Image: ProductImage,
     Title: ProductTitle,
     Buttons: ProductButtons
