@@ -1,0 +1,77 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "Alex",
+        "label": "First name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "msg": "Campo requerido"
+            },
+            {
+                "type": "min",
+                "msg": "Longitud minima de 3 caracteres",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Lopez",
+        "label": "last name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "msg": "Campo requerido"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Alex@email.com",
+        "label": "email",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "msg": "Campo requerido"
+            },
+            {
+                "type": "email",
+                "msg": "Email requerido"
+            }
+        ]
+    },
+    
+    {
+        "type": "select",
+        "name": "favColor",
+        "label": "Color favorito",
+        "value": "",
+        "optiopn": [
+            {
+                "id": 1,
+                "label": "Rojo"
+            },
+            {
+                "id": 2,
+                "label": "Azul"
+            },
+            {
+                "id": 3,
+                "label": "Verde"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required",
+                "msg": "Campo requerido"
+            }
+        ]
+    }
+]
